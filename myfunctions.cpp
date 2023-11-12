@@ -25,7 +25,7 @@ bool isDirectory(const std::string& path) {
 // Function to search for a specified text in file names within a given directory and its subdirectories
 bool searchAndPrint(const std::string& searchText, const std::string& directory) {
 
-    bool status = true;
+    bool status;
     // Open the specified directory for reading
     DIR* dir = opendir(directory.c_str());
 
